@@ -25,4 +25,4 @@ jobs:
         with:
           push: true
           file: debian/Dockerfile
-          tags: shrptech/pterodactyl-docker-image:debian
+          tags: ghcr.io/shrptech/pterodactyl-docker-image:debian
