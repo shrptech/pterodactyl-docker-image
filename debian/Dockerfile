@@ -33,8 +33,6 @@ RUN cd /tmp/ \
  && tar xvf rcon.tar.gz \
  && mv rcon-0.9.0-amd64_linux/rcon /usr/local/bin/
 
-COPY ./entrypoint.sh /entrypoint.sh
-
 RUN apt-get install -y libpulse0 libpulse-dev
 USER container
 ENV         HOME /home/container
