@@ -24,4 +24,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
+          file: debian/Dockerfile
           tags: shrptech/pterodactyl-docker-image:debian
