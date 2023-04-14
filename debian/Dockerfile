@@ -27,7 +27,7 @@ LABEL		author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 LABEL		org.opencontainers.image.source="https://github.com/matthewpi/images"
 LABEL		org.opencontainers.image.licenses=MIT
 
-RUN			apt-get update -y && apt-get upgrade -y && apt-get install -y ca-certificates iproute2 tzdata \
+RUN			apt-get update -y && apt-get upgrade -y && apt-get install -y ca-certificates iproute2 tzdata libpulse-dev libatomic1 libc6 \
 				&& adduser -D -h /home/container container
 
 USER		container
